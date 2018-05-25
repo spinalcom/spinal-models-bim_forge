@@ -1,7 +1,7 @@
 const spinalCore = require("spinal-core-connectorjs");
-const SpinalBIMObject = require("SpinalBIMObject");
+const SpinalModelsBIMViewer = require("SpinalModelsBIMViewer");
 
-class SpinalBIMObjectForge extends SpinalBIMObject {
+class SpinalBIMObjectForge extends SpinalModelsBIMViewer.SpinalBIMObject {
   constructor(_id, _name, _group, _display, _color, name =
     "SpinalBIMObjectForge") {
     super(_id, _name, _group, _display, _color);
@@ -17,5 +17,5 @@ class SpinalBIMObjectForge extends SpinalBIMObject {
   }
 }
 
-module.exports = SpinalBIMObjectForgeForge;
+module.exports = SpinalBIMObjectForge;
 spinalCore.register_models([SpinalBIMObjectForge])
