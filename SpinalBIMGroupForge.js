@@ -1,6 +1,11 @@
 const spinalCore = require("spinal-core-connectorjs");
 const SpinalModelsBIMViewer = require("SpinalModelsBIMViewer");
 
+// name: _name || "",
+// BIMObjects: _BIMObjects || [],
+// display: _display || true,
+// color: _color || ""
+
 class SpinalBIMGroupForge extends SpinalModelsBIMViewer.SpinalBIMGroup {
   constructor(_name, _BIMObjects, _display, _color, name =
     "SpinalBIMGroupForge") {
