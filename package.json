@@ -1,11 +1,11 @@
 {
-  "name": "SpinalModelsBIMForge",
+  "name": "spinal-models-bim_forge",
   "version": "1.0.0",
   "main": "main.js",
   "license": "SpinalCore",
   "private": true,
   "dependencies": {
-    "SpinalModelsBIMViewer": "git+https://github.com/spinalcom/spinal-models-bim_viewer.git"
+    "spinal-models-bim_viewer": "git+https://github.com/spinalcom/spinal-models-bim_viewer.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
