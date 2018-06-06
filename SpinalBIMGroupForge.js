@@ -1,5 +1,5 @@
 const spinalCore = require("spinal-core-connectorjs");
-const SpinalModelsBIMViewer = require("SpinalModelsBIMViewer");
+const SpinalModelsBIMViewer = require("spinal-models-bim_viewer");
 
 // name: _name || "",
 // BIMObjects: _BIMObjects || [],
