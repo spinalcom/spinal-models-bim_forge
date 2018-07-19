@@ -11,12 +11,13 @@ class SpinalBIMObjectForge extends SpinalModelsBIMViewer.SpinalBIMObject {
   constructor(_id, _name, _group, _display, _color, name =
     "SpinalBIMObjectForge") {
     super(_id, _name, _group, _display, _color);
+    this.fillName();
   }
 
   fillName() {
     return new Promise((resolve, reject) => {
       globalType.v.getProperties(this.id.get(), r => {
-        this.title.set(r.name);
+        this.name.set(r.name);
         resolve();
       });
     });
