@@ -1,5 +1,6 @@
 const spinalCore = require("spinal-core-connectorjs");
 const SpinalModelsBIMViewer = require("spinal-models-bim_viewer");
+const globalType = typeof window === "undefined" ? global : window;
 
 // id: _id || 0,
 // name: _name || "",
@@ -8,8 +9,14 @@ const SpinalModelsBIMViewer = require("spinal-models-bim_viewer");
 // color: _color || ""
 
 class SpinalBIMObjectForge extends SpinalModelsBIMViewer.SpinalBIMObject {
-  constructor(_id, _name, _group, _display, _color, name =
-    "SpinalBIMObjectForge") {
+  constructor(
+    _id,
+    _name,
+    _group,
+    _display,
+    _color,
+    name = "SpinalBIMObjectForge"
+  ) {
     super(_id, _name, _group, _display, _color);
     this.fillName();
   }
@@ -25,4 +32,4 @@ class SpinalBIMObjectForge extends SpinalModelsBIMViewer.SpinalBIMObject {
 }
 
 module.exports = SpinalBIMObjectForge;
-spinalCore.register_models([SpinalBIMObjectForge])
+spinalCore.register_models([SpinalBIMObjectForge]);
