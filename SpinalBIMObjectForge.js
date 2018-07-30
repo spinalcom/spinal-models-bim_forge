@@ -18,7 +18,9 @@ class SpinalBIMObjectForge extends SpinalModelsBIMViewer.SpinalBIMObject {
     name = "SpinalBIMObjectForge"
   ) {
     super(_id, _name, _group, _display, _color);
-    this.fillName();
+    if (FileSystem._sig_server) {
+      this.fillName();
+    }
   }
 
   fillName() {
